@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARK House</title>
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-box">
+          <span class="ark" id="ark"
+            >ARK<br />
+            House</span
+          >
+        </div>
+      </div>
+      <div class="navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#service-page">Services</a></li>
+        <li><a href="#project-page">Projects</a></li>
+        <li><a href="#team-display">Team</a></li>
+        <li><a href="#">Blog</a></li>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="hero">
+        <div class="text-container">
+          <p id="year">Since 1975 _</p>
+          <h1>Architecture. <br />Planning. <br />Design.</h1>
+        </div>
+        <div class="icon-container">
+          <button id="contact">
+            Contact Us<span><i data-feather="arrow-up-right"></i></span>
+          </button>
+          <div class="sosmed-container">
+            <a href="#" id="sosmed"><i data-feather="instagram"></i></a>
+            <a href="#" id="sosmed"><i data-feather="twitter"></i></a>
+            <a href="#" id="sosmed"><i data-feather="linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <h1>
+        Forming an irrational love between <br />
+        clients and theirbuliding
+      </h1>
+      <p>
+        Our approach starts with... <br />How do you want to make people feel?
+      </p>
+      <div class="profile-img">
+        <img src="img/Image.png" alt="" />
+        <img src="img/Image2.png" alt="" />
+        <img src="img/Image3.png" alt="" />
+      </div>
+      <p>
+        In the face of changing trends and technologies, <br />
+        ARK House creates architecture that remains <br />
+        relevant - not based on trends, fads or dates - <br />
+        but on timeless human truths.
+      </p>
+      <button id="history">
+        Our History<span><i data-feather="arrow-up-right"></i></span>
+      </button>
+
+      <div class="service" id="service-page">
+        <h1>Services</h1>
+        <button id="discover">
+          Discover All<span><i data-feather="arrow-up-right"></i></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tiga">
+        <h1>3</h1>
+        <h2>
+          Offices around <br />
+          the world
+        </h2>
+      </div>
+      <div class="tentang">
+        <ul>
+          <li><a href="#" onclick="showImageSection(1)">Architecture</a></li>
+          <li><a href="#" onclick="showImageSection(2)">Landscape</a></li>
+          <li><a href="#" onclick="showImageSection(3)">Interior</a></li>
+          <li><a href="#" onclick="showImageSection(4)">Design</a></li>
+        </ul>
+      </div>
+
+      <div class="image-section" id="img-sec-1">
+        <img src="img/image4.png" alt="Office Building" />
+        <p>
+          At the heart of everything we do is the human experience to feel. To
+          love. To image. To wonder. To jest. To rule. To serve. To belong.
+        </p>
+        <button id="contactBtn">
+          Contact Us<span><i data-feather="arrow-up-right"></i></span>
+        </button>
+      </div>
+
+      <div class="image-section" id="img-sec-2" style="display: none">
+        <img src="img/image5.jpg" alt="Office Building" />
+        <p>
+          The carefully designed landscape around the building enhances its
+          architectural features, creating a harmonious blend of nature and
+          structure.
+        </p>
+        <button id="contactBtn">
+          Contact Us<span><i data-feather="arrow-up-right"></i></span>
+        </button>
+      </div>
+
+      <div class="image-section" id="img-sec-3" style="display: none">
+        <img src="img/image6.jpg" alt="Office Building" />
+        <p>
+          The interior of the building combines contemporary design elements
+          with warm textures, creating a cozy yet sophisticated ambiance.
+        </p>
+        <button id="contactBtn">
+          Contact Us<span><i data-feather="arrow-up-right"></i></span>
+        </button>
+      </div>
+
+      <div class="image-section" id="img-sec-4" style="display: none">
+        <img src="img/image7.jpg" alt="Office Building" />
+        <p>
+          The innovative design of the building prioritizes sustainability,
+          incorporating eco-friendly materials and energy-efficient
+          technologies.
+        </p>
+        <button id="contactBtn">
+          Contact Us<span><i data-feather="arrow-up-right"></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="project" id="project-page">
+      <h1>Recent Project</h1>
+      <button id="project">
+        Discover All<span><i data-feather="arrow-up-right"></i></span>
+      </button>
+    </div>
+
+    <div class="gallery">
+      <div class="card-img" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image8.png" alt="UVU Classroom Building" />
+        <h3>UVU Classroom Building</h3>
+        <p>Omer, UT</p>
+      </div>
+      <div class="card-img-2" onclick="loadInfo('monsoncenter.html')">
+        <img src="img/image9.png" alt="Thomas S. Monson Center" />
+        <h3>Thomas S. Monson Center</h3>
+        <p>Salt Lake City, UT</p>
+      </div>
+    </div>
+
+    <div class="gall-2">
+      <div class="card-img3" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image10.png" alt="USU Swaner Preserve and Ecocenter" />
+        <h3>USU Swaner Preserve and Ecocenter</h3>
+        <p>Logan, UT</p>
+      </div>
+      <div class="gall-info">
+        <h1>45</h1>
+        <p>
+          Yeas of architecture, <br />
+          planning, design
+        </p>
+      </div>
+    </div>
+
+    <div class="gall-3">
+      <div class="card-img4" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image11.png" alt="UVU Fulton Library" />
+        <h3>UVU Fulton Library</h3>
+        <p>Oren, UT</p>
+      </div>
+
+      <div class="card-img5" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image12.png" alt="USU College of Agriculture" />
+        <h3>USU College of Agriculture</h3>
+        <p>Logan, UT</p>
+      </div>
+    </div>
+
+    <div class="gall-4">
+      <div class="card-img6" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image13.png" alt="Sugar House Monument Plaza " />
+        <h3>Sugar House Monument Plaza</h3>
+        <p>Salt Lake City, UT</p>
+      </div>
+      <div class="card-img6" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image14.png" alt="Sugar House Monument Plaza " />
+        <h3>Sugar House Monument Plaza</h3>
+        <p>Salt Lake City, UT</p>
+      </div>
+    </div>
+
+    <div class="gall-5">
+      <div class="card-img7" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image15.png" alt="Sugar House Monument Plaza " />
+        <h3>Sugar House Monument Plaza</h3>
+        <p>Salt Lake City, UT</p>
+      </div>
+      <div class="card-img8" onclick="loadInfo('uvubuilding.html')">
+        <img src="img/image16.png" alt="Sugar House Monument Plaza " />
+        <h3>Sugar House Monument Plaza</h3>
+        <p>Salt Lake City, UT</p>
+      </div>
+    </div>
+
+    <div class="last">
+      <div class="cont-z">
+        <h1>2.5k</h1>
+        <p>
+          With over 2.600 <br />
+          projects completed
+        </p>
+      </div>
+
+      <div class="card-img9">
+        <img src="img/image17.png" alt="S-Line " />
+        <h3>S-Line</h3>
+        <p>Salt Lake City, UT</p>
+      </div>
+    </div>
+
+    <div class="offer">
+      <h1>Start a Project?</h1>
+      <button id="offer">
+        Show All<span><i data-feather="arrow-up-right"></i></span>
+      </button>
+    </div>
+
+    <div class="team" id="team-display">
+      <h1>Our Team</h1>
+      <button id="discover">
+        Show All<span><i data-feather="arrow-up-right"></i></span>
+      </button>
+    </div>
+
+    <div class="member">
+      <p>
+        Our team of expert architects and builders, with over 45 years of <br />
+        combined experience, will bring your vision to life. Trust us to
+        <br />deliver functional and beautiful structures that exceed <br />
+        expectations.
+      </p>
+      <div class="team-content">
+        <div class="anggota">
+          <ul>
+            <li><a href="#" onclick="showTeamSection(5)">Architecture</a></li>
+            <li><a href="#" onclick="showTeamSection(6)">Landscape</a></li>
+            <li><a href="#" onclick="showTeamSection(7)">Interior</a></li>
+            <li><a href="#" onclick="showTeamSection(8)">Design</a></li>
+          </ul>
+
+          <div class="gallery-team" id="team-1" sty>
+            <div class="gallery-item">
+              <img src="img/people1.png" alt="Jane Cooper" />
+              <div class="info">
+                <h3>Jane Cooper</h3>
+                <p>Art Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people2.png" alt="Cameron Williamson" />
+              <div class="info">
+                <h3>Cameron Williamson</h3>
+                <p>Senior Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people3.png" alt="Brooklyn Simmons" />
+              <div class="info">
+                <h3>Brooklyn Simmons</h3>
+                <p>PR Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people4.png" alt="Jacob Jones" />
+              <div class="info">
+                <h3>Jacob Jones</h3>
+                <p>Financial Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people5.png" alt="Jerome Bell" />
+              <div class="info">
+                <h3>Jerome Bell</h3>
+                <p>Lead Designer</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people6.png" alt="Kristin Watson" />
+              <div class="info">
+                <h3>Kristin Watson</h3>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-team" id="team-2" style="display: none">
+            <div class="gallery-item">
+              <img src="img/people7.jpg" alt="Elizabeth" />
+              <div class="info">
+                <h3>Elizabeth</h3>
+                <p>Art Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people8.jpg" alt="Susan" />
+              <div class="info">
+                <h3>Susan</h3>
+                <p>Senior Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people9.jpg" alt="Michael" />
+              <div class="info">
+                <h3>Michael</h3>
+                <p>PR Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people10.jpg" alt="John" />
+              <div class="info">
+                <h3>John</h3>
+                <p>Financial Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people11.jpg" alt="Daniel" />
+              <div class="info">
+                <h3>Daniel</h3>
+                <p>Lead Designer</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people12.jpg" alt="Elizabeth" />
+              <div class="info">
+                <h3>Elizabeth</h3>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-team" id="team-3" style="display: none">
+            <div class="gallery-item">
+              <img src="img/people13.jpg" alt="Christopher" />
+              <div class="info">
+                <h3>Christopher</h3>
+                <p>Art Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people14.jpg" alt="Anthony" />
+              <div class="info">
+                <h3>Anthony</h3>
+                <p>Senior Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people15.jpg" alt="Matthew" />
+              <div class="info">
+                <h3>Matthew</h3>
+                <p>PR Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people16.jpg" alt="Mary" />
+              <div class="info">
+                <h3>Mary</h3>
+                <p>Financial Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people17.jpg" alt="Patricia" />
+              <div class="info">
+                <h3>Patricia</h3>
+                <p>Lead Designer</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people18.jpg" alt="Barbara" />
+              <div class="info">
+                <h3>Barbara</h3>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-team" id="team-4" style="display: none">
+            <div class="gallery-item">
+              <img src="img/people19.jpg" alt="Karen" />
+              <div class="info">
+                <h3>Karen</h3>
+                <p>Art Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people20.jpg" alt="David" />
+              <div class="info">
+                <h3>David</h3>
+                <p>Senior Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people21.jpg" alt="Stephanie" />
+              <div class="info">
+                <h3>Stephanie</h3>
+                <p>PR Manager</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people22.jpg" alt="Emily" />
+              <div class="info">
+                <h3>Emily</h3>
+                <p>Financial Director</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people23.jpg" alt="Ada Smith" />
+              <div class="info">
+                <h3>Ada Smith</h3>
+                <p>Lead Designer</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/people24.jpg" alt="Angela" />
+              <div class="info">
+                <h3>Angela</h3>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog" id="blog-page">
+      <h1>Blog</h1>
+      <button id="blog">
+        Show More<span><i data-feather="arrow-up-right"></i></span>
+      </button>
+    </div>
+
+    <div class="blog-content">
+      <div class="blog-container">
+        <div class="card">
+          <img src="img/blog1.png" alt="Design and architecture training" />
+          <div class="card-content">
+            <h3>Nov 12, 2023</h3>
+            <h2>Design and architecture training</h2>
+            <p>
+              Designers and architects learn through a combination of formal
+              education, practical experience, and continuing professional
+              development.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/blog2.png" alt="Design of public spaces" />
+          <div class="card-content">
+            <h3>Nov 01, 2023</h3>
+            <h2>Design of public spaces</h2>
+            <p>
+              Public space design focuses on creating functional, safe, and
+              visually appealing areas that foster social connections, community
+              involvement, and a strong sense...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="end-page" id="page">
+      <h1>Star a Project ?</h1>
+      <button id="end-page">
+        Show More<span><i data-feather="arrow-up-right"></i></span>
+      </button>
+    </div>
+
+    <footer>
+      <div class="social-add">
+        <div class="support">
+          <h2>Support is available</h2>
+          <h3>24 hours</h3>
+          <button id="contactBtn">Contact Us</button>
+        </div>
+        <div class="footer-links">
+          <span>About</span>
+          <span>Services</span>
+          <span>Projects</span>
+          <span>Team</span>
+          <span>Blog</span>
+        </div>
+      </div>
+      <div class="locations">
+        <div class="location">
+          <h4>North</h4>
+          <p>AFL Architects</p>
+          <p>St George's House</p>
+          <p>56 Peter Street</p>
+          <p>Manchester</p>
+          <p>M2 3NQ</p>
+          <p>+44 (0)161 236 6263</p>
+        </div>
+        <div class="location">
+          <h4>Midlands</h4>
+          <p>AFL Architects</p>
+          <p>Unit 12</p>
+          <p>133 Newhall Street</p>
+          <p>Birmingham</p>
+          <p>B3 1SF</p>
+          <p>+44 (0)121 289 4363</p>
+        </div>
+        <div class="location">
+          <h4>South</h4>
+          <p>AFL Architects</p>
+          <p>24 Greville Street</p>
+          <p>London</p>
+          <p>EC1N 8SS</p>
+          <p>+44 (0)20 3096 9263</p>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>© Copywriting | All Rights Reserved</p>
+      <div class="terms">
+        <a href="#">Terms of Use</a> | <a href="#">Privacy</a>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
